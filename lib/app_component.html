@@ -1,0 +1,15 @@
+<h1>{{headerText}}</h1>
+
+<div class="balloons">
+    <balloon
+            *ngFor="let balloon of listOfBalloons"
+            [balloon]="balloon"
+            [lastPoppedBalloonIndex]="lastPoppedBalloonIndex"
+            (onPop)="handleBalloonPop($event)"
+    >
+    </balloon>
+
+</div>
+<div>
+    <p *ngFor="let message of messages">{{message}}</p>
+</div>

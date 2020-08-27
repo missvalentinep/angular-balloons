@@ -1,0 +1,60 @@
+img {
+    height: 280px;
+    cursor: pointer;
+}
+
+.wiggle {
+    animation-name: wiggle-animation;
+    animation-duration: 1s;
+}
+
+.turn-right {
+    animation-name: turn-right-animation;
+    animation-duration: 1s;
+}
+
+.turn-left {
+    animation-name: turn-left-animation;
+    animation-duration: 1s;
+}
+
+.move-from-top {
+    animation-name: move-from-top-animation;
+    animation-duration: 1s;
+}
+
+.popped {
+    width: 0;
+}
+@keyframes wiggle-animation {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+@keyframes turn-left-animation {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-10deg); }
+    50% { transform: rotate(-30deg); }
+    70% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes turn-right-animation {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(10deg); }
+    50% { transform: rotate(30deg); }
+    70% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+@keyframes move-from-top-animation {
+    from {
+       margin-top: -1000px;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+

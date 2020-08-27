@@ -1,0 +1,14 @@
+name: popping_balloons
+description: A web app that uses AngularDart Components
+
+dependencies:
+  angular: ^5.3.0
+  angular_components: ^0.13.0
+
+dev_dependencies:
+  angular_test: ^2.3.0
+  build_runner: ^1.6.0
+  build_test: ^0.10.8
+  build_web_compilers: ^2.6.1
+  pedantic: ^1.8.0
+  test: ^1.6.0

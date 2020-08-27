@@ -1,0 +1,8 @@
+.balloons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+balloon {
+    width: 120px;
+}
